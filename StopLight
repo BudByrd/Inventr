@@ -1,0 +1,100 @@
+
+
+int Light12Green = 12 ; //Pin 12
+int Light11Yellow = 11 ; //Pin 11
+int Light10Red = 10 ; //Pin 10
+int Light9Blue = 9 ; //Pin 9
+int Light8Green = 8 ; //Pin 8
+
+void setup() {
+ // initialize the HERO // put your setup code here, to run once:
+
+pinMode(Light12Green, OUTPUT);
+pinMode(Light11Yellow, OUTPUT);
+pinMode(Light10Red, OUTPUT);
+pinMode(Light9Blue, OUTPUT);
+pinMode(Light8Green, OUTPUT);
+digitalWrite(Light12Green, LOW);
+digitalWrite(Light11Yellow, LOW);
+digitalWrite(Light10Red, LOW);
+digitalWrite(Light9Blue, LOW);
+digitalWrite(Light8Green, LOW);
+
+
+
+}
+
+void loop() {
+
+
+digitalWrite(Light12Green, HIGH); //Greenlight On
+
+digitalWrite(Light9Blue, HIGH);
+delay(5000);
+
+digitalWrite(Light9Blue, HIGH);  //Walk light blink
+delay(100);
+digitalWrite(Light9Blue, LOW);
+delay(100);
+digitalWrite(Light9Blue, HIGH);
+delay(100);
+digitalWrite(Light9Blue, LOW);
+delay(100);
+digitalWrite(Light9Blue, HIGH);
+delay(100);
+digitalWrite(Light9Blue, LOW);
+delay(100);
+digitalWrite(Light9Blue, HIGH);
+delay(100);
+digitalWrite(Light9Blue, LOW);
+delay(100);
+digitalWrite(Light9Blue, HIGH);
+delay(100);
+digitalWrite(Light9Blue, LOW);
+delay(100);
+digitalWrite(Light9Blue, HIGH);
+delay(100);
+digitalWrite(Light9Blue, LOW);
+delay(300);
+
+
+digitalWrite(Light12Green, LOW);  //Green light off
+delay(50);
+
+digitalWrite(Light11Yellow, HIGH);  //Yellow light on
+delay(500);
+digitalWrite(Light11Yellow, LOW);  //Yellow Light on
+delay(50);
+
+
+
+digitalWrite(Light10Red, HIGH);  //Stop light on
+digitalWrite(Light8Green, HIGH);
+delay(5000);
+
+digitalWrite(Light8Green, HIGH);  //Walk Light on
+delay(100);
+digitalWrite(Light8Green, LOW);
+delay(100);
+digitalWrite(Light8Green, HIGH);
+delay(100);
+digitalWrite(Light8Green, LOW);
+delay(100);
+digitalWrite(Light8Green, HIGH);
+delay(100);
+digitalWrite(Light8Green, LOW);
+delay(100);
+digitalWrite(Light8Green, HIGH);
+delay(100);
+digitalWrite(Light8Green, LOW);
+delay(100);
+digitalWrite(Light8Green, HIGH);
+delay(100);
+digitalWrite(Light8Green, LOW);
+delay(100);
+
+delay(300);
+digitalWrite(Light10Red, LOW);
+
+
+}
